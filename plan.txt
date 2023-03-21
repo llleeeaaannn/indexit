@@ -1,3 +1,8 @@
+Functionality:
+Users can adjust price of a ticker and index price will update.
+Users can adjust by $ or % amount and index will be shown in $ and %.
+Users can adjust using a slider or enter the amount of change in a text box.
+
 Data Objects:
 Stocks (Name, Ticker, % of Index)
 
