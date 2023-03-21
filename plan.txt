@@ -1,0 +1,6 @@
+Data Objects:
+Stocks (Name, Ticker, % of Index)
+
+API:
+Get price of Index
+Get price of each stock
