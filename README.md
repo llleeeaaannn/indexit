@@ -1,3 +1,5 @@
-# Custom React App Template
+# Indexit
 
-A React app template which fits my personal needs.
+The Index Editor
+
+Alter the performance of stocks within an index and see how it performs
