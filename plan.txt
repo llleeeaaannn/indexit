@@ -2,6 +2,10 @@ Functionality:
 Users can adjust price of a ticker and index price will update.
 Users can adjust by $ or % amount and index will be shown in $ and %.
 Users can adjust using a slider or enter the amount of change in a text box.
+Users can adjust multiple stocks at once.
+Users can adjust entire sectors/industries by % (not price)
+Users can reset all changes with a button
+Users can reset single stock changes with a button
 
 Data Objects:
 Stocks (Name, Ticker, % of Index)
