@@ -22,3 +22,6 @@ Stocks (Name, Ticker, % of Index)
 API:
 Get price of Index
 Get price of each stock
+
+Calculation and Weighting Guidelines:
+https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
