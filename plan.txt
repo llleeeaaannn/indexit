@@ -7,6 +7,13 @@ Users can adjust entire sectors/industries by % (not price)
 Users can reset all changes with a button
 Users can reset single stock changes with a button
 
+UI:
+Each stock is own component
+Each stock is a row
+By default ordered from highest % to lowest
+Open to change sorting (hight %, lowest %, alphabetical, biggest change, lowest change)
+Search bar which removes all stocks that dont match
+
 Data Objects:
 Stocks (Name, Ticker, % of Index)
 
