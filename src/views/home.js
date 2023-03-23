@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import { AppContext } from '../App';
+import Stock from '../components/stock'
 
 const Home = () => {
 
@@ -7,7 +8,7 @@ const Home = () => {
 
   return (
     <div>
-      Home
+      <Stock />
     </div>
   )
 }

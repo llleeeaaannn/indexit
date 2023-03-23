@@ -4,7 +4,7 @@ import ReactSlider from 'react-slider';
 const Stock = ({ ticker }) => {
 
   return (
-    <div className={styles.stock}>
+    <div>
 
       <div>
         <span>AAPL</span>
