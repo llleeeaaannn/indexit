@@ -18,17 +18,28 @@ const Stock = ({ ticker }) => {
         </div>
       </div>
 
-      <span>{stockNewPrice}</span>
-
       <div>
         <Slider
           axis="x"
-          xstep={0.1}
+          xstep={0.01}
           xmin={0}
           xmax={100}
           x={stockNewPrice}
           onChange={({ x }) => setStockNewPrice(x.toFixed(2))}
         />
+      </div>
+
+      <div>
+        <div>
+          <button>%</button>
+          <button>$</button>
+        </div>
+
+        <span>{ stockNewPrice }</span>
+
+        <div>
+          <input type='text'></input>
+        </div>
       </div>
 
     </div>
