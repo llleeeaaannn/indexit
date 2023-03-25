@@ -7,6 +7,11 @@ const Stock = ({ ticker }) => {
   const stockPrice = 50;
   const [stockNewPrice, setStockNewPrice] = useState(stockPrice);
 
+  const percentChange = () => {
+    const percent = (stockNewPrice / stockPrice * 100 - 100).toFixed(2);
+    return percent > 0 ? `+${percent}` : percent;
+  }
+
   const sliderStyles = {
     track: {
       backgroundColor: 'blue'
@@ -36,7 +41,6 @@ const Stock = ({ ticker }) => {
       </div>
 
       <div className={styles.slider}>
-        <span>${ stockNewPrice }</span>
         <Slider
           axis="x"
           xstep={0.01}
@@ -46,20 +50,11 @@ const Stock = ({ ticker }) => {
           onChange={({ x }) => setStockNewPrice(x.toFixed(2))}
           styles={sliderStyles}
         />
-        <span>{ (stockNewPrice / stockPrice * 100 - 100).toFixed(2) }%</span>
       </div>
 
       <div className={styles.updated}>
-        <div>
-          <button>%</button>
-          <button>$</button>
-        </div>
-
-        <span>{ stockNewPrice }</span>
-
-        <div>
-          <input type='text'></input>
-        </div>
+        <span>${ stockNewPrice }</span>
+        <span>{ percentChange() }%</span>
       </div>
 
     </div>

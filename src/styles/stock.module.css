@@ -1,10 +1,15 @@
 .stock {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 3rem;
-  padding: 1rem;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
   border: 1px solid black;
   border-radius: 1rem;
+}
+
+.overview,
+.updated {
+  width: 10rem;
 }
 
 .overview {
@@ -19,6 +24,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.updated span {
+  font-size: 1.5rem;
 }
 
 .slider {
