@@ -1,5 +1,4 @@
 // import styles from '../styles/navbar.module.css';
-import ReactSlider from 'react-slider';
 
 const Stock = ({ ticker }) => {
 
@@ -16,12 +15,7 @@ const Stock = ({ ticker }) => {
       </div>
 
       <div>
-        <ReactSlider
-          className="horizontal-slider"
-          thumbClassName="example-thumb"
-          trackClassName="example-track"
-          renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
-        />
+
       </div>
 
     </div>
