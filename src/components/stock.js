@@ -32,10 +32,11 @@ const Stock = ({ ticker }) => {
     <div className={styles.stock}>
 
       <div className={styles.overview}>
-        <span>AAPL</span>
-        <span>Apple Inc</span>
-        <div>
+        <h3>AAPL</h3>
+        <h4>Apple Inc</h4>
+        <div className={styles.price}>
           <span>$153.80</span>
+          <span>/</span>
           <span>+1.08%</span>
         </div>
       </div>
