@@ -1,5 +1,34 @@
 .stock {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  gap: 3rem;
+  padding: 1rem;
   border: 1px solid black;
+  border-radius: 1rem;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.updated {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.slider > div {
+  width: 100%;
 }
