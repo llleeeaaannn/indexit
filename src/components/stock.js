@@ -1,6 +1,10 @@
 // import styles from '../styles/navbar.module.css';
+import { useState } from 'react';
+import Slider from 'react-input-slider';
 
 const Stock = ({ ticker }) => {
+
+  const [stockNewPrice, setStockNewPrice] = useState(50);
 
   return (
     <div>
@@ -14,8 +18,17 @@ const Stock = ({ ticker }) => {
         </div>
       </div>
 
-      <div>
+      <span>{stockNewPrice}</span>
 
+      <div>
+        <Slider
+          axis="x"
+          xstep={0.1}
+          xmin={0}
+          xmax={100}
+          x={stockNewPrice}
+          onChange={({ x }) => setStockNewPrice(x.toFixed(2))}
+        />
       </div>
 
     </div>
