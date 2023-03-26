@@ -221,11 +221,101 @@ const stocksData = {
     weight: 0.511762,
     currentprice: 375.45
   },
+  lin: {
+    ticker: 'LIN',
+    name: 'Linde plc',
+    weight: 0.509273,
+    currentprice: 354.01
+  },
+  txn: {
+    ticker: 'TXN',
+    name: 'Texas Instruments Incorporated',
+    weight: 0.494814	,
+    currentprice: 180.73
+  },
+  dhr: {
+    ticker: 'DHR',
+    name: 'Danaher Corporation',
+    weight: 0.490336,
+    currentprice: 249.08
+  },
+  amd: {
+    ticker: 'AMD',
+    name: '	Advanced Micro Devices Inc.',
+    weight: 0.489825,
+    currentprice: 98.13
+  },
+  vz: {
+    ticker: 'VZ',
+    name: 'Verizon Communications Inc.',
+    weight: 0.475474,
+    currentprice: 37.68
+  },
+  cmcsa: {
+    ticker: 'CMCSA',
+    name: 'Comcast Corporation Class A',
+    weight: 0.458394,
+    currentprice: 36.10
+  },
+  nke: {
+    ticker: 'NKE',
+    name: 'NIKE Inc. Class B',
+    weight: 0.456504,
+    currentprice: 120.83
+  },
+  nee: {
+    ticker: 'NEE',
+    name: 'NextEra Energy Inc.',
+    weight: 0.444339,
+    currentprice: 77.59
+  },
+  nflx: {
+    ticker: 'NFLX',
+    name: 'Netflix Inc.',
+    weight: 0.432233,
+    currentprice: 329.65
+  },
+  bmy: {
+    ticker: 'BMY',
+    name: 'Bristol-Myers Squibb Company',
+    weight: 0.431428,
+    currentprice: 69.70
+  },
   template: {
     ticker: 'XXXX',
     name: 'Namenamename',
     weight: 12345,
     currentprice: 9999
+  },
+  rtx: {
+    ticker: 'RTX',
+    name: 'Raytheon Technologies Corporation',
+    weight: 0.42605,
+    currentprice: 96.67
+  },
+  pm: {
+    ticker: 'PM',
+    name: 'Philip Morris International Inc.',
+    weight: 0.423942,
+    currentprice: 91.31
+  },
+  wfc: {
+    ticker: 'WFC',
+    name: 'Wells Fargo & Company',
+    weight: 0.422618,
+    currentprice: 36.33
+  },
+  qcom: {
+    ticker: 'QCOM',
+    name: 'QUALCOMM Incorporated',
+    weight: 0.420194,
+    currentprice: 125.06
+  },
+  ups: {
+    ticker: 'UPS',
+    name: 'United Parcel Service Inc. Class B',
+    weight: 0.40967,
+    currentprice: 186.40
   },
   template: {
     ticker: 'XXXX',
@@ -239,66 +329,7 @@ const stocksData = {
     weight: 12345,
     currentprice: 9999
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
+
 }
 
 const template = {
