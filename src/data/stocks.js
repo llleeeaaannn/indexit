@@ -317,11 +317,95 @@ const stocksData = {
     weight: 0.40967,
     currentprice: 186.40
   },
-  template: {
-    ticker: 'XXXX',
+  orcl: {
+    ticker: 'ORCL',
+    name: 'Oracle Corporation',
+    weight: 0.408694	,
+    currentprice: 88.11
+  },
+  t: {
+    ticker: 'T',
+    name: 'AT&T Inc.',
+    weight: 0.398626,
+    currentprice: 18.62
+  },
+  hon: {
+    ticker: 'HON',
+    name: 'Honeywell International Inc.',
+    weight: 0.378346,
+    currentprice: 188.25
+  },
+  amgn: {
+    ticker: 'AMGN',
+    name: 'Amgen Inc.',
+    weight: 0.377076,
+    currentprice: 238.70
+  },
+  intu: {
+    ticker: 'INTU',
+    name: 'Intuit Inc.',
+    weight: 0.368702,
+    currentprice: 430.28
+  },
+  intc: {
+    ticker: 'INTC',
+    name: '	Intel Corporation',
+    weight: 0.36383,
+    currentprice: 29.39
+  },
+  cop: {
+    ticker: 'COP',
+    name: '	ConocoPhillips',
+    weight: 0.357489,
+    currentprice: 95.56
+  },
+  low: {
+    ticker: 'LOW',
+    name: "Lowe's Companies Inc.",
+    weight: 0.3475,
+    currentprice: 189.62
+  },
+  cat: {
+    ticker: 'CAT',
     name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+    weight: 0.345958,
+    currentprice: 217.35
+  },
+  unp: {
+    ticker: 'UNP',
+    name: 'Union Pacific Corporation',
+    weight: 0.345151,
+    currentprice: 187.93
+  },
+  sbux: {
+    ticker: 'SBUX',
+    name: 'Starbucks Corporation',
+    weight: 0.342676,
+    currentprice: 98.46
+  },
+  ms: {
+    ticker: 'MS',
+    name: 'Morgan Stanley',
+    weight: 0.339756,
+    currentprice: 84.03
+  },
+  ibm: {
+    ticker: 'IBM',
+    name: '	International Business Machines Corporation',
+    weight: 0.337914,
+    currentprice: 125.44
+  },
+  ba: {
+    ticker: 'BA',
+    name: 'Boeing Company',
+    weight: 0.337142,
+    currentprice: 197.62
+  },
+  spgi: {
+    ticker: 'SPGI',
+    name: 'S&P Global Inc.',
+    weight: 0.331357,
+    currentprice: 338.58
   },
   template: {
     ticker: 'XXXX',
@@ -329,7 +413,6 @@ const stocksData = {
     weight: 12345,
     currentprice: 9999
   },
-
 }
 
 const template = {
