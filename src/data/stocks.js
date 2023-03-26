@@ -477,7 +477,7 @@ const stocksData = {
     ticker: 'BKNG',
     name: 'Booking Holdings Inc.',
     weight: 0.297884,
-    currentprice: 2,509.67
+    currentprice: 2509.67
   },
   gild: {
     ticker: 'GILD',
