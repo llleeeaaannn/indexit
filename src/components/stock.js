@@ -4,8 +4,6 @@ import Slider from 'react-input-slider';
 
 const Stock = ({ share }) => {
 
-  const name = 'Apple Inc';
-  const ticker = 'AAPL';
   const stockPrice = 50.00;
   const stockPercent = 1.02;
   const [stockNewPrice, setStockNewPrice] = useState(stockPrice);
@@ -35,8 +33,8 @@ const Stock = ({ share }) => {
     <div className={styles.stock}>
 
       <div className={styles.overview}>
-        <h3>{ ticker }</h3>
-        <h4>{ name }</h4>
+        <h3>{ share.ticker }</h3>
+        <h4>{ share.name }</h4>
         <div className={styles.price}>
           <span>${ stockPrice }</span>
           <span>/</span>

@@ -1,4 +1,4 @@
-const stocks = {
+const stocksData = {
   aapl: {
     ticker: 'AAPL',
     name: 'Apple Inc.',
@@ -309,3 +309,5 @@ const template = {
     currentprice: 9999
   },
 }
+
+export default stocksData;
