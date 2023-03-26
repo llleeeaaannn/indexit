@@ -12,9 +12,9 @@ const Home = () => {
   return (
     <div>
       {
-        stocksData.map(share  => {
-          <Stock share={share} />
-        })
+        Object.keys(stocksData).map((share, i) => (
+          <Stock share={stocksData[share]} key={i} />
+        ))
       }
       <Test />
     </div>
