@@ -688,24 +688,6 @@ const stocksData = {
     name: 'Schlumberger N.V.',
     weight: 0.195674,
     currentprice: 44.79
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
   }
 }
 
