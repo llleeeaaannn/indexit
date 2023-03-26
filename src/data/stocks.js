@@ -407,12 +407,306 @@ const stocksData = {
     weight: 0.331357,
     currentprice: 338.58
   },
+  gs: {
+    ticker: 'GS',
+    name: 'Goldman Sachs Group Inc.',
+    weight: 0.322996,
+    currentprice: 313.12
+  },
+  elv: {
+    ticker: 'ELV',
+    name: 'Elevance Health Inc.',
+    weight: 0.322913,
+    currentprice: 455.80
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 474.79
+  },
+  lmt: {
+    ticker: 'LMT',
+    name: 'Lockheed Martin Corporation',
+    weight: 0.32207,
+    currentprice: 9999
+  },
   template: {
     ticker: 'XXXX',
     name: 'Namenamename',
     weight: 12345,
     currentprice: 9999
   },
+  de: {
+    ticker: 'DE',
+    name: 'Deere & Company',
+    weight: 0.321012,
+    currentprice: 387.07
+  },
+  pld: {
+    ticker: 'PLD',
+    name: 'Prologis Inc.',
+    weight: 0.318706,
+    currentprice: 116.80
+  },
+  amat: {
+    ticker: 'AMAT',
+    name: 'Applied Materials Inc.',
+    weight: 0.31359,
+    currentprice: 119.51
+  },
+  mdt: {
+    ticker: 'MDT',
+    name: 'Medtronic Plc',
+    weight: 0.312587,
+    currentprice: 79.36
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 91.68
+  },
+  ge: {
+    ticker: 'GE',
+    name: 'General Electric Company',
+    weight: 0.301733,
+    currentprice: 9999
+  },
+  bkng: {
+    ticker: 'BKNG',
+    name: 'Booking Holdings Inc.',
+    weight: 0.297884,
+    currentprice: 2,509.67
+  },
+  gild: {
+    ticker: 'GILD',
+    name: 'Gilead Sciences Inc.',
+    weight: 0.297536,
+    currentprice: 80.17
+  },
+  blk: {
+    ticker: 'BLK',
+    name: 'BlackRock Inc.',
+    weight: 0.296198,
+    currentprice: 648.17
+  },
+  axp: {
+    ticker: 'AXP',
+    name: 'American Express Company',
+    weight: 0.294225,
+    currentprice: 160.07
+  },
+  adi: {
+    ticker: 'ADI',
+    name: 'Analog Devices Inc.',
+    weight: 0.290901,
+    currentprice: 188.10
+  },
+  cvs: {
+    ticker: 'CVS',
+    name: 'CVS Health Corporation',
+    weight: 0.281531,
+    currentprice: 73.38
+  },
+  syk: {
+    ticker: 'SYK',
+    name: 'Stryker Corporation',
+    weight: 0.280151,
+    currentprice: 277.12
+  },
+  mdlz: {
+    ticker: 'MDLZ',
+    name: 'Mondelez International Inc. Class A',
+    weight: 0.277604,
+    currentprice: 69.22
+  },
+  now: {
+    ticker: 'NOW',
+    name: 'ServiceNow Inc.',
+    weight: 433.50,
+    currentprice: 433.50
+  },
+  amt: {
+    ticker: 'AMT',
+    name: 'American Tower Corporation',
+    weight: 0.269857,
+    currentprice: 200.33
+  },
+  adp: {
+    ticker: 'ADP',
+    name: 'Automatic Data Processing Inc.',
+    weight: 0.268151,
+    currentprice: 217.46
+  },
+  tjx: {
+    ticker: 'TJX',
+    name: 'TJX Companies Inc',
+    weight: 0.26205,
+    currentprice: 77.83
+  },
+  regn: {
+    ticker: 'REGN',
+    name: 'Regeneron Pharmaceuticals Inc.',
+    weight: 0.261244,
+    currentprice: 821.01
+  },
+  isrg: {
+    ticker: 'ISRG',
+    name: 'Intuitive Surgical Inc.',
+    weight: 0.259506,
+    currentprice: 256.35
+  },
+  tmus: {
+    ticker: 'TMUS',
+    name: 'T-Mobile US Inc.',
+    weight: 0.255339,
+    currentprice: 143.57
+  },
+  c: {
+    ticker: 'C',
+    name: 'Citigroup Inc.',
+    weight: 0.254525,
+    currentprice: 43.13
+  },
+  pypl: {
+    ticker: 'PYPL',
+    name: 'PayPal Holdings Inc.',
+    weight: 0.248697,
+    currentprice: 74.02
+  },
+  schw: {
+    ticker: 'SCHW',
+    name: 'Charles Schwab Corp',
+    weight: 0.244399,
+    currentprice: 53.08
+  },
+  pgr: {
+    ticker: 'PGR',
+    name: 'Progressive Corporation',
+    weight: 0.24391,
+    currentprice: 138.45
+  },
+  mmc: {
+    ticker: 'MMC',
+    name: 'Marsh & McLennan Companies Inc.',
+    weight: 0.237992,
+    currentprice: 160.78
+  },
+  vrtx: {
+    ticker: 'VRTX',
+    name: 'Vertex Pharmaceuticals Incorporated',
+    weight: 0.237352,
+    currentprice: 315.23
+  },
+  mo: {
+    ticker: 'MO',
+    name: 'Altria Group Inc.',
+    weight: 0.235904,
+    currentprice: 44.38
+  },
+  cb: {
+    ticker: 'CB',
+    name: 'Chubb Limited',
+    weight: 0.233491,
+    currentprice: 187.16
+  },
+  ci: {
+    ticker: 'CI',
+    name: 'Cigna Group',
+    weight: 0.23216,
+    currentprice: 260.51
+  },
+  zts: {
+    ticker: 'ZTS',
+    name: 'Zoetis Inc. Class A',
+    weight: 0.227283,
+    currentprice: 163.63
+  },
+  so: {
+    ticker: 'SO',
+    name: 'Southern Company',
+    weight: 0.218435,
+    currentprice: 67.70
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  },
+  template: {
+    ticker: 'XXXX',
+    name: 'Namenamename',
+    weight: 12345,
+    currentprice: 9999
+  }
 }
 
 const template = {
