@@ -2,9 +2,12 @@ import styles from '../styles/stock.module.css';
 import { useState } from 'react';
 import Slider from 'react-input-slider';
 
-const Stock = ({ ticker }) => {
+const Stock = ({ share }) => {
 
-  const stockPrice = 50;
+  const name = 'Apple Inc';
+  const ticker = 'AAPL';
+  const stockPrice = 50.00;
+  const stockPercent = 1.02;
   const [stockNewPrice, setStockNewPrice] = useState(stockPrice);
 
   const percentChange = () => {
@@ -32,12 +35,12 @@ const Stock = ({ ticker }) => {
     <div className={styles.stock}>
 
       <div className={styles.overview}>
-        <h3>AAPL</h3>
-        <h4>Apple Inc</h4>
+        <h3>{ ticker }</h3>
+        <h4>{ name }</h4>
         <div className={styles.price}>
-          <span>$153.80</span>
+          <span>${ stockPrice }</span>
           <span>/</span>
-          <span>+1.08%</span>
+          <span>{ stockPercent }%</span>
         </div>
       </div>
 
