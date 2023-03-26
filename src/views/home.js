@@ -7,8 +7,6 @@ import stocksData from '../data/stocks';
 
 const Home = () => {
 
-  const { random } = useContext(AppContext);
-
   return (
     <div>
       {
