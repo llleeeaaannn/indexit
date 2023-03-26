@@ -629,65 +629,65 @@ const stocksData = {
     weight: 0.218435,
     currentprice: 67.70
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+  tgt: {
+    ticker: 'TGT',
+    name: 'Target Corporation',
+    weight: 0.217323,
+    currentprice: 156.64
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+  lrcx: {
+    ticker: 'LRCX',
+    name: 'Lam Research Corporation',
+    weight: 0.214036,
+    currentprice: 503.25
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+  fisv: {
+    ticker: 'FISV',
+    name: 'Fiserv Inc.',
+    weight: 0.213362,
+    currentprice: 114.15
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+  duk: {
+    ticker: 'DUK',
+    name: 'Duke Energy Corporation',
+    weight: 0.213238,
+    currentprice: 93.96
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+  bsx: {
+    ticker: 'BSX',
+    name: 'Boston Scientific Corporation',
+    weight: 0.207682,
+    currentprice: 47.25
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+  bdx: {
+    ticker: 'BDX',
+    name: 'Becton Dickinson and Company',
+    weight: 0.20316,
+    currentprice: 240.87
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+  mu: {
+    ticker: 'MU',
+    name: 'Micron Technology Inc.',
+    weight: 0.202771,
+    currentprice: 61.37
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+  etn: {
+    ticker: 'ETN',
+    name: 'Eaton Corp. Plc',
+    weight: 0.198242,
+    currentprice: 163.28
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+  cme: {
+    ticker: 'CME',
+    name: 'CME Group Inc. Class A',
+    weight: 0.195879,
+    currentprice: 183.85
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
+  slb: {
+    ticker: 'SLB',
+    name: 'Schlumberger N.V.',
+    weight: 0.195674,
+    currentprice: 44.79
   },
   template: {
     ticker: 'XXXX',
