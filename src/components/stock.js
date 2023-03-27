@@ -15,17 +15,17 @@ const Stock = ({ share }) => {
 
   const sliderStyles = {
     track: {
-      backgroundColor: 'blue'
-    },
-    active: {
       backgroundColor: 'red'
     },
+    active: {
+      backgroundColor: 'green'
+    },
     thumb: {
-      width: 20,
-      height: 20
+      width: 15,
+      height: 15
     },
     disabled: {
-      opacity: 0.5
+      opacity: 0.25
     }
   }
 
