@@ -3,8 +3,9 @@
   grid-template-columns: auto 1fr auto;
   gap: 2rem;
   padding: 1.5rem 2rem;
-  border: 1px solid grey;
   border-radius: 1rem;
+  color: var(--lightBlackFC);
+  background-color: var(--lightGreyBG);
 }
 
 .overview,

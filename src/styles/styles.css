@@ -1,3 +1,4 @@
+/* Reset CSS */
 *,
 ::before,
 ::after {
@@ -41,4 +42,20 @@ h5,
 h6,
 span {
   overflow-wrap: break-word;
+}
+
+/* Variables */
+:root {
+  /* Background Colours */
+  --whiteBG: rgba(255, 255, 255, 1);
+  --lightGreyBG: rgba(246, 246, 247, 1);
+  --darkGreyBG: rgba(227, 227, 229, 1);
+
+  /* Font Colours */
+  --lightBlackFC: rgba(60, 60, 60, 1);
+}
+
+/* General Styling */
+html {
+  background-color: var(--white);
 }
