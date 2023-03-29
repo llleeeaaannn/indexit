@@ -54,8 +54,11 @@ span {
 
   /* Font Colours */
   --darkBlackFC: rgba(0, 0, 0, 1);
-  --blackFC: rgba(30, 30, 30, 1);
-  --lightBlackFC: rgba(60, 60, 60, 1);
+  --blackFC: rgba(20, 20, 20, 1);
+  --lightBlackFC: rgba(40, 40, 40, 1);
+
+  /* Box Shadow */
+  --bsSlim: 0rem 0rem 1rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 /* General Styling */

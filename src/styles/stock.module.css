@@ -42,6 +42,14 @@
   align-items: center;
 }
 
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
 .updated span {
   font-size: 1.5rem;
 }
