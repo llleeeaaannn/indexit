@@ -48,8 +48,8 @@ span {
 :root {
   /* Background Colours */
   --whiteBG: rgba(255, 255, 255, 1);
-  --lightGreyBG: rgba(246, 246, 247, 1);
-  --darkGreyBG: rgba(227, 227, 229, 1);
+  --grey1BG: rgba(246, 246, 247, 1);
+  --grey2BG: rgba(227, 227, 229, 1);
   --greenBG: rgba(215, 255, 180, 1);
 
   /* Font Colours */
