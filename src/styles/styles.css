@@ -53,9 +53,11 @@ span {
   --greenBG: rgba(215, 255, 180, 1);
 
   /* Font Colours */
-  --darkBlackFC: rgba(0, 0, 0, 1);
-  --blackFC: rgba(20, 20, 20, 1);
-  --lightBlackFC: rgba(40, 40, 40, 1);
+  --black1FC: rgba(0, 0, 0, 1);
+  --black2FC: rgba(20, 20, 20, 1);
+  --black3FC: rgba(40, 40, 40, 1);
+  --black4FC: rgba(60, 60, 60, 1);
+  --black5FC: rgba(80, 80, 80, 1);
 
   /* Box Shadow */
   --bsSlim: 0rem 0rem 1rem 1rem rgba(0, 0, 0, 0.5);
