@@ -54,7 +54,11 @@ const Stock = ({ share }) => {
         />
       </div>
 
-      <div className={`${styles.updated} ${stockNewPrice > stockPrice ? styles.positive : ''} ${stockNewPrice < stockPrice ? styles.negative : ''}`}>
+      <div className={`
+        ${styles.updated}
+        ${stockNewPrice > stockPrice ? styles.positive : ''}
+        ${stockNewPrice < stockPrice ? styles.negative : ''}
+      `}>
         <span>${ stockNewPrice }</span>
         <span>{ percentChange() }%</span>
       </div>
