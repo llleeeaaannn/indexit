@@ -36,7 +36,7 @@ const stocksData = {
     currentprice: 106.41
   },
   brkb: {
-    brkb: 'BRK.B',
+    ticker: 'BRKB',
     name: 'Berkshire Hathaway Inc. Class B',
     weight: 1.628577,
     currentprice: 298.97
@@ -100,12 +100,6 @@ const stocksData = {
     name: 'Home Depot Inc.',
     weight: 0.876595,
     currentprice: 283.56
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
   },
   cvx: {
     ticker: 'CVX',
