@@ -50,8 +50,11 @@ span {
   --whiteBG: rgba(255, 255, 255, 1);
   --lightGreyBG: rgba(246, 246, 247, 1);
   --darkGreyBG: rgba(227, 227, 229, 1);
+  --greenBG: rgba(215, 255, 180, 1);
 
   /* Font Colours */
+  --darkBlackFC: rgba(0, 0, 0, 1);
+  --blackFC: rgba(30, 30, 30, 1);
   --lightBlackFC: rgba(60, 60, 60, 1);
 }
 
