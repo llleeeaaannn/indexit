@@ -25,3 +25,8 @@ Get price of each stock
 
 Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
+
+To Do:
+Figure out logic of how to access state from parent:
+- Declare a single state object with stocks as properties
+- Declare a state per stock

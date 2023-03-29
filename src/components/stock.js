@@ -47,7 +47,7 @@ const Stock = ({ share }) => {
           axis="x"
           xstep={0.01}
           xmin={0}
-          xmax={100}
+          xmax={stockPrice * 2}
           x={stockNewPrice}
           onChange={({ x }) => setStockNewPrice(x.toFixed(2))}
           styles={sliderStyles}
