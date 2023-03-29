@@ -4,7 +4,7 @@
   gap: 2rem;
   padding: 1.5rem 2rem;
   border-radius: 1rem;
-  color: var(--blackFC);
+  color: var(--black3FC);
   background-color: var(--lightGreyBG);
 }
 
@@ -22,19 +22,20 @@
 
 .overview h3 {
   font-size: 1.5rem;
-  color: var(--blackFC);
+  color: var(--black2FC);
 }
 
 .overview h4 {
   font-size: 1rem;
   font-weight: normal;
-  color: var(--lightBlackFC);
+  color: var(--black3FC);
 }
 
 .price {
   display: flex;
   flex-direction: row;
   gap: 0.25rem;
+  color: var(--black4FC);
 }
 
 .updated {
