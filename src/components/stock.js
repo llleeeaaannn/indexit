@@ -11,7 +11,6 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
   }, [stockState, dataKey])
 
   const stockPercent = 1.02;
-  // const [stockNewPrice, setStockNewPrice] = useState(stockPrice);
 
   const percentChange = () => {
     const percent = (stockState.price / stockState.currentprice * 100 - 100).toFixed(2);
@@ -56,7 +55,7 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
           x={stockState.price}
           styles={sliderStyles}
           onChange={({ x }) => setStockState({
-            price: x.toFixed(2),
+            price: Number(x.toFixed(2)),
             weight: stockState.weight,
             ticker: stockState.ticker,
             name: stockState.name,

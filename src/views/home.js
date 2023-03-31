@@ -1,5 +1,5 @@
 import styles from '../styles/home.module.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Stock from '../components/stock';
 import Test from '../components/test';
 import stocksData from '../data/stocksdata';
@@ -10,14 +10,13 @@ const Home = () => {
     const states = {};
     for (let key in data) {
       states[key] = {
-        price: data[key].currentprice,
+        price: data[key].price,
         weight: data[key].weight,
         ticker: data[key].ticker,
         name: data[key].name,
         currentprice: data[key].currentprice
       }
     }
-    // console.log(states);
   }
 
   const updateStockState = (key, updatedState) => {

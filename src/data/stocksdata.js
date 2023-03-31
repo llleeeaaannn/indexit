@@ -113,7 +113,8 @@ const stocksData = {
     ticker: 'ABBV',
     name: 'AbbVie Inc.',
     weight: 0.832027,
-    currentprice: 157.87
+    currentprice: 157.87,
+    price: 157.87
   },
   avgo: {
     ticker: 'AVGO',
