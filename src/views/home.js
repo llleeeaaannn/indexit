@@ -14,14 +14,13 @@ const Home = () => {
         weight: data[key].weight,
         ticker: data[key].ticker,
         name: data[key].name,
+        currentprice: data[key].currentprice
       }
     }
-    console.log(states);
+    // console.log(states);
   }
 
   const updateStockState = (key, updatedState) => {
-    console.log(key);
-    console.log(updatedState);
     setStockStates((oldState) => ({
       ...oldState,
       [key]: updatedState

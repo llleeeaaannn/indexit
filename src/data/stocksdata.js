@@ -3,13 +3,15 @@ const stocksData = {
     ticker: 'AAPL',
     name: 'Apple Inc.',
     weight: 7.160776,
-    currentprice: 160.22
+    currentprice: 160.22,
+    price: 160.22
   },
   msft: {
     ticker: 'MSFT',
     name: 'Microsoft Corporation',
     weight: 6.261452,
-    currentprice: 280.96
+    currentprice: 280.96,
+    price: 280.96,
   },
   amzn: {
     ticker: 'AMZN',

@@ -6,20 +6,15 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
 
   const [stockState, setStockState] = useState(stock)
 
-  // useEffect(() => {
-  //   updateStockState(dataKey, childState);
-  // }, [childState, updateStockState, dataKey])
-
   useEffect(() => {
-    console.log(stock)
-  }, [])
+    updateStockState(dataKey, stockState);
+  }, [stockState, dataKey])
 
-  const stockPrice = 50.00;
   const stockPercent = 1.02;
-  const [stockNewPrice, setStockNewPrice] = useState(stockPrice);
+  // const [stockNewPrice, setStockNewPrice] = useState(stockPrice);
 
   const percentChange = () => {
-    const percent = (stockNewPrice / stockPrice * 100 - 100).toFixed(2);
+    const percent = (stockState.price / stockState.currentprice * 100 - 100).toFixed(2);
     return percent > 0 ? `+${percent}` : percent;
   }
 
@@ -46,7 +41,7 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
         <h3>{ stockState.ticker }</h3>
         <h4>{ stockState.name }</h4>
         <div className={styles.price}>
-          <span>${ stockPrice }</span>
+          <span>${ stockState.currentprice }</span>
           <span>/</span>
           <span>{ stockPercent }%</span>
         </div>
@@ -57,19 +52,25 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
           axis="x"
           xstep={0.01}
           xmin={0}
-          xmax={stockPrice * 2}
-          x={stockNewPrice}
-          onChange={({ x }) => setStockNewPrice(x.toFixed(2))}
+          xmax={stockState.currentprice * 2}
+          x={stockState.price}
           styles={sliderStyles}
+          onChange={({ x }) => setStockState({
+            price: x.toFixed(2),
+            weight: stockState.weight,
+            ticker: stockState.ticker,
+            name: stockState.name,
+            currentprice: stockState.currentprice
+          })}
         />
       </div>
 
       <div className={`
         ${styles.updated}
-        ${stockNewPrice > stockPrice ? styles.positive : ''}
-        ${stockNewPrice < stockPrice ? styles.negative : ''}
+        ${stockState.price > stockState.currentprice ? styles.positive : ''}
+        ${stockState.price < stockState.currentprice ? styles.negative : ''}
       `}>
-        <span>${ stockNewPrice }</span>
+        <span>${ stockState.price }</span>
         <span>{ percentChange() }%</span>
       </div>
 
