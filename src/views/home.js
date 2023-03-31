@@ -10,8 +10,10 @@ const Home = () => {
     const states = {};
     for (let key in data) {
       states[key] = {
-        price: data.key.currentprice,
-        weight: data.key.weight
+        price: data[key].currentprice,
+        weight: data[key].weight,
+        ticker: data[key].ticker,
+        name: data[key].name,
       }
     }
   }
@@ -30,10 +32,10 @@ const Home = () => {
   return (
     <div className={styles.home}>
       {
-        Object.keys(stocksData).map(([key, stock]) => (
+        Object.keys(stocksData).map((stock, i) => (
           <Stock
-            key={key}
-            dataKey={key}
+            key={i}
+            dataKey={stock.ticker}
             stock={stock}
             updateStockState={updateStockState}
           />

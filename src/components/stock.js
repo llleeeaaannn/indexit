@@ -9,9 +9,13 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
     weight: 1.23467
   });
 
+  // useEffect(() => {
+  //   updateStockState(dataKey, childState);
+  // }, [childState, updateStockState, dataKey])
+
   useEffect(() => {
-    updateStockState(dataKey, childState);
-  }, [childState, updateStockState, dataKey])
+    console.log(stock)
+  }, [])
 
   const stockPrice = 50.00;
   const stockPercent = 1.02;

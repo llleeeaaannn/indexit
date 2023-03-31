@@ -275,12 +275,6 @@ const stocksData = {
     weight: 0.431428,
     currentprice: 69.70
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
   rtx: {
     ticker: 'RTX',
     name: 'Raytheon Technologies Corporation',
@@ -413,22 +407,10 @@ const stocksData = {
     weight: 0.322913,
     currentprice: 455.80
   },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 474.79
-  },
   lmt: {
     ticker: 'LMT',
     name: 'Lockheed Martin Corporation',
     weight: 0.32207,
-    currentprice: 9999
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
     currentprice: 9999
   },
   de: {
@@ -454,12 +436,6 @@ const stocksData = {
     name: 'Medtronic Plc',
     weight: 0.312587,
     currentprice: 79.36
-  },
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 91.68
   },
   ge: {
     ticker: 'GE',
@@ -685,13 +661,13 @@ const stocksData = {
   }
 }
 
-const template = {
-  template: {
-    ticker: 'XXXX',
-    name: 'Namenamename',
-    weight: 12345,
-    currentprice: 9999
-  },
-}
+// const template = {
+//   template: {
+//     ticker: 'XXXX',
+//     name: 'Namenamename',
+//     weight: 12345,
+//     currentprice: 9999
+//   },
+// }
 
 export default stocksData;
