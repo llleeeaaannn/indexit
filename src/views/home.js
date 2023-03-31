@@ -1,5 +1,5 @@
 import styles from '../styles/home.module.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Stock from '../components/stock';
 import Test from '../components/test';
 import stocksData from '../data/stocksdata';
