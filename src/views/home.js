@@ -17,6 +17,8 @@ const Home = () => {
     }
   }
 
+  const [stockStates, setStockStates] = useState(() => createStockStates(stocksData));
+
   return (
     <div className={styles.home}>
       {
