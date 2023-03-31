@@ -18,6 +18,13 @@ const Home = () => {
     }
   }
 
+  const updateStockState = (key, updatedState) => {
+    setStockStates((oldState) => ({
+      ...oldState,
+      [key]: updatedState
+    }))
+  }
+
   const [stockStates, setStockStates] = useState(() => createStockStates(stocksData));
 
   return (
