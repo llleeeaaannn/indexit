@@ -30,8 +30,13 @@ const Home = () => {
   return (
     <div className={styles.home}>
       {
-        Object.keys(stocksData).map((share, i) => (
-          <Stock share={stocksData[share]} key={i} />
+        Object.keys(stocksData).map(([key, stock]) => (
+          <Stock
+            key={key}
+            dataKey={key}
+            stock={stock}
+            updateStockState={updateStockState}
+          />
         ))
       }
       <Test />

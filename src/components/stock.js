@@ -2,7 +2,13 @@ import styles from '../styles/stock.module.css';
 import { useState } from 'react';
 import Slider from 'react-input-slider';
 
-const Stock = ({ share }) => {
+const Stock = ({ dataKey, stock, updateStockState }) => {
+
+  const [childState, setChildState] = useState();
+
+  useEffect(() => {
+    onUpdateChildState(dataKey, childState);
+  }, [childState, onUpdateChildState, dataKey]);
 
   const stockPrice = 50.00;
   const stockPercent = 1.02;
