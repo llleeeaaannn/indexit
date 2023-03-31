@@ -10,15 +10,15 @@ const Home = () => {
     const states = {};
     for (let key in data) {
       states[key] = {
-        ticker: data.key.ticker,
-        name: data.key.name,
-        weight: data.key.weight,
-        currentprice: data.key.currentprice
+        price: data.key.currentprice,
+        weight: data.key.weight
       }
     }
   }
 
   const updateStockState = (key, updatedState) => {
+    console.log(key);
+    console.log(updatedState);
     setStockStates((oldState) => ({
       ...oldState,
       [key]: updatedState
