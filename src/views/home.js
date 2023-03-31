@@ -16,6 +16,7 @@ const Home = () => {
         name: data[key].name,
       }
     }
+    console.log(states);
   }
 
   const updateStockState = (key, updatedState) => {
@@ -35,8 +36,8 @@ const Home = () => {
         Object.keys(stocksData).map((stock, i) => (
           <Stock
             key={i}
-            dataKey={stock.ticker}
-            stock={stock}
+            dataKey={stock}
+            stock={stocksData[stock]}
             updateStockState={updateStockState}
           />
         ))

@@ -4,10 +4,7 @@ import Slider from 'react-input-slider';
 
 const Stock = ({ dataKey, stock, updateStockState }) => {
 
-  const [childState, setChildState] = useState({
-    price: 55.55,
-    weight: 1.23467
-  });
+  const [stockState, setStockState] = useState(stock)
 
   // useEffect(() => {
   //   updateStockState(dataKey, childState);
@@ -46,8 +43,8 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
     <div className={styles.stock}>
 
       <div className={styles.overview}>
-        <h3>{ stock.ticker }</h3>
-        <h4>{ stock.name }</h4>
+        <h3>{ stockState.ticker }</h3>
+        <h4>{ stockState.name }</h4>
         <div className={styles.price}>
           <span>${ stockPrice }</span>
           <span>/</span>
