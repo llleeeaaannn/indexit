@@ -33,10 +33,6 @@ const Home = () => {
     }))
   }
 
-  // const [stockStates, setStockStates] = useState(() => createStockStates(stocksData));
-
-  // const stockAPIData = getHoldings();
-
   const [stockStates, setStockStates] = useState(() => createStockStates(stocksData));
 
   return (
