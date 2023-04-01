@@ -13,8 +13,6 @@ const Home = () => {
     return json;
   }
 
-  const [tickers, setTickers] = useState(getHoldings);
-
   const createStockStates = (data) => {
     const states = {};
     for (let key in data) {
@@ -35,22 +33,9 @@ const Home = () => {
     }))
   }
 
-  function calculateTotalValue(components) {
-    let totalValue = 0;
+  // const [stockStates, setStockStates] = useState(() => createStockStates(stocksData));
 
-    for (let key in components) {
-      if (components.hasOwnProperty(key)) {
-        let component = components[key];
-        let contribution = component.weight * component.currentprice / 100;
-        console.log(contribution);
-        totalValue += contribution;
-      }
-    }
-    console.log(totalValue);
-    return totalValue;
-  }
-
-  calculateTotalValue(stocksData);
+  // const stockAPIData = getHoldings();
 
   const [stockStates, setStockStates] = useState(() => createStockStates(stocksData));
 
