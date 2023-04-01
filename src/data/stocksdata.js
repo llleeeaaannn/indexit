@@ -497,7 +497,7 @@ const stocksData = {
   now: {
     ticker: 'NOW',
     name: 'ServiceNow Inc.',
-    weight: 433.50,
+    weight: 0.270887,
     currentprice: 433.50
   },
   amt: {

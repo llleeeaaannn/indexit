@@ -26,6 +26,23 @@ const Home = () => {
     }))
   }
 
+  function calculateTotalValue(components) {
+    let totalValue = 0;
+
+    for (let key in components) {
+      if (components.hasOwnProperty(key)) {
+        let component = components[key];
+        let contribution = component.weight * component.currentprice / 100;
+        console.log(contribution);
+        totalValue += contribution;
+      }
+    }
+    console.log(totalValue);
+    return totalValue;
+  }
+
+  calculateTotalValue(stocksData);
+
   const [stockStates, setStockStates] = useState(() => createStockStates(stocksData));
 
   return (
