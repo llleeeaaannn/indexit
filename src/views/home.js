@@ -50,10 +50,6 @@ const Home = () => {
     }))
   }
 
-  // const [stockStates, setStockStates] = useState(() => createStockStates(stocksData));
-
-  // const [stockStates, setStockStates] = useState(() => createStockStates(getHoldings()));
-
   if (loading) {
     return <div>LOADING</div>
   }

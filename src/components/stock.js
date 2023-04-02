@@ -10,6 +10,10 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
     updateStockState(dataKey, stockState);
   }, [stockState, dataKey])
 
+  useEffect(() => {
+    console.log(dataKey);
+  }, [])
+
   const stockPercent = 1.02;
 
   const percentChange = () => {
