@@ -13,13 +13,10 @@ const Home = () => {
     const getHoldings = async function() {
       const response = await fetch('http://localhost:4000/holdings');
       const json = await response.json();
-
       setStockStates(() => createStockStates(json));
       setLoading(false);
     }
-
     getHoldings();
-
   }, []);
 
   const createStockStates = (data) => {

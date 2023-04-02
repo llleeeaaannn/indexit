@@ -27,6 +27,10 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
+Comment code
+
+Add ability to change price of stock with exact values for both dollars & percentage
+
 Make sliders less laggy
 
 Figure out how to get updated prices for each component despite api limits:
