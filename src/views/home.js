@@ -6,12 +6,28 @@ import stocksData from '../data/stocksdata';
 
 const Home = () => {
 
-  const getHoldings = async function() {
-    const response = await fetch('http://localhost:4000/holdings');
-    const json = await response.json();
-    console.log(json);
-    return json;
-  }
+  // const getHoldings = async function() {
+  //   const response = await fetch('http://localhost:4000/holdings');
+  //   const json = await response.json();
+  //   console.log(json);
+  //   return json;
+  // }
+
+  const [stockStates, setStockStates] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const getHoldings = async function() {
+      const response = await fetch('http://localhost:4000/holdings');
+      const json = await response.json();
+
+      setStockStates(() => createStockStates(json));
+      setLoading(false);
+    }
+
+    getHoldings();
+
+  }, []);
 
   const createStockStates = (data) => {
     const states = {};
@@ -24,6 +40,7 @@ const Home = () => {
         currentprice: data[key].currentprice
       }
     }
+    return states;
   }
 
   const updateStockState = (key, updatedState) => {
@@ -33,16 +50,22 @@ const Home = () => {
     }))
   }
 
-  const [stockStates, setStockStates] = useState(() => createStockStates(stocksData));
+  // const [stockStates, setStockStates] = useState(() => createStockStates(stocksData));
+
+  // const [stockStates, setStockStates] = useState(() => createStockStates(getHoldings()));
+
+  if (loading) {
+    return <div>LOADING</div>
+  }
 
   return (
     <div className={styles.home}>
       {
-        Object.keys(stocksData).map((stock, i) => (
+        Object.keys(stockStates).map((stock, i) => (
           <Stock
             key={i}
             dataKey={stock}
-            stock={stocksData[stock]}
+            stock={stockStates[stock]}
             updateStockState={updateStockState}
           />
         ))
