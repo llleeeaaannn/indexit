@@ -6,13 +6,6 @@ import stocksData from '../data/stocksdata';
 
 const Home = () => {
 
-  // const getHoldings = async function() {
-  //   const response = await fetch('http://localhost:4000/holdings');
-  //   const json = await response.json();
-  //   console.log(json);
-  //   return json;
-  // }
-
   const [stockStates, setStockStates] = useState(null);
   const [loading, setLoading] = useState(true);
 
