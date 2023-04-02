@@ -8,11 +8,7 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
 
   useEffect(() => {
     updateStockState(dataKey, stockState);
-  }, [stockState, dataKey])
-
-  useEffect(() => {
-    console.log(dataKey);
-  }, [])
+  }, [stockState])
 
   const stockPercent = 1.02;
 
