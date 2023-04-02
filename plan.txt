@@ -27,6 +27,7 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
-Figure out logic of how to access state from parent:
-- Declare a single state object with stocks as properties
-- Declare a state per stock
+Figure out how to get updated prices for each component despite api limits:
+- Make calls every 15 minutes from the backend
+- Use different API's
+- Find an API with no limit
