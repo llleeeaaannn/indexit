@@ -4,14 +4,17 @@ import Slider from 'react-input-slider';
 
 const Stock = ({ dataKey, stock, updateStockState }) => {
 
+  // Individual stock state
   const [stockState, setStockState] = useState(stock)
 
+  // Update parent state when individual stock state changes
   useEffect(() => {
     updateStockState(dataKey, stockState);
   }, [stockState])
 
   const stockPercent = 1.02;
 
+  // Function to calculate percent change of price and prepend symbol if negative
   const percentChange = () => {
     const percent = (stockState.price / stockState.originalprice * 100 - 100).toFixed(2);
     return percent > 0 ? `+${percent}` : percent;
