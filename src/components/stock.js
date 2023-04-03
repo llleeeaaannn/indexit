@@ -13,7 +13,7 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
   const stockPercent = 1.02;
 
   const percentChange = () => {
-    const percent = (stockState.price / stockState.currentprice * 100 - 100).toFixed(2);
+    const percent = (stockState.price / stockState.originalprice * 100 - 100).toFixed(2);
     return percent > 0 ? `+${percent}` : percent;
   }
 
@@ -40,7 +40,7 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
         <h3>{ stockState.ticker }</h3>
         <h4>{ stockState.name }</h4>
         <div className={styles.price}>
-          <span>${ stockState.currentprice }</span>
+          <span>${ stockState.originalprice }</span>
           <span>/</span>
           <span>{ stockPercent }%</span>
         </div>
@@ -51,7 +51,7 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
           axis="x"
           xstep={0.01}
           xmin={0}
-          xmax={stockState.currentprice * 2}
+          xmax={stockState.originalprice * 2}
           x={stockState.price}
           styles={sliderStyles}
           onChange={({ x }) => setStockState({
@@ -59,15 +59,15 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
             weight: stockState.weight,
             ticker: stockState.ticker,
             name: stockState.name,
-            currentprice: stockState.currentprice
+            originalprice: stockState.originalprice
           })}
         />
       </div>
 
       <div className={`
         ${styles.updated}
-        ${stockState.price > stockState.currentprice ? styles.positive : ''}
-        ${stockState.price < stockState.currentprice ? styles.negative : ''}
+        ${stockState.price > stockState.originalprice ? styles.positive : ''}
+        ${stockState.price < stockState.originalprice ? styles.negative : ''}
       `}>
         <span>${ stockState.price }</span>
         <span>{ percentChange() }%</span>

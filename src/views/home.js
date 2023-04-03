@@ -27,7 +27,7 @@ const Home = () => {
         weight: data[key].weight,
         ticker: data[key].ticker,
         name: data[key].name,
-        currentprice: data[key].currentprice
+        originalprice: data[key].originalprice
       }
     }
     return states;
