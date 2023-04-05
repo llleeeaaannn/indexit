@@ -8,6 +8,7 @@ import stocksData from '../data/stocksdata';
 const Home = () => {
 
   const [tickers, setTickers] = useState([]);
+  const [displayStocks, setDisplayStocks] = useState(['AMD', 'AAPL', 'MSFT'])
   const [stockStates, setStockStates] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -25,7 +26,7 @@ const Home = () => {
 
   const createStockStates = (data) => {
     const states = {};
-    const tickers = [];
+    const tickersArray = [];
     for (let key in data) {
       states[key] = {
         price: data[key].price,
@@ -53,8 +54,9 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <Searchbar />
+
       {
-        Object.keys(stockStates).map((stock, i) => (
+        displayStocks.map((stock, i) => (
           <Stock
             key={i}
             dataKey={stock}
@@ -68,3 +70,15 @@ const Home = () => {
 }
 
 export default Home;
+
+// Old way of rendering stocks
+// {
+//   Object.keys(stockStates).map((stock, i) => (
+//     <Stock
+//       key={i}
+//       dataKey={stock}
+//       stock={stockStates[stock]}
+//       updateStockState={updateStockState}
+//     />
+//   ))
+// }
