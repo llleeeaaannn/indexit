@@ -12,6 +12,7 @@ const Home = () => {
   const [stockStates, setStockStates] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // Call createStockStates upon page load and assign returned data to state
   useEffect(() => {
     const getHoldings = async function() {
       const response = await fetch('http://localhost:4000/holdings');
@@ -24,6 +25,7 @@ const Home = () => {
     getHoldings();
   }, []);
 
+  // Create parent stock object and array of all tickers
   const createStockStates = (data) => {
     const states = {};
     const tickersArray = [];
@@ -40,7 +42,7 @@ const Home = () => {
     return {states, tickersArray};
   }
 
-
+  // Update parent stock state with new stock object data (called from within stock component)
   const updateStockState = (key, updatedState) => {
     setStockStates((oldState) => ({
       ...oldState,
@@ -71,15 +73,3 @@ const Home = () => {
 }
 
 export default Home;
-
-// Old way of rendering stocks
-// {
-//   Object.keys(stockStates).map((stock, i) => (
-//     <Stock
-//       key={i}
-//       dataKey={stock}
-//       stock={stockStates[stock]}
-//       updateStockState={updateStockState}
-//     />
-//   ))
-// }

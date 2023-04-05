@@ -7,6 +7,7 @@ const Searchbar = ({ tickers, setDisplayStocks }) => {
 
   const [results, setResults] = useState();
 
+  // Convert input to uppercase, ensure it is truthy, search against all tickers, set displayStocks state to matching tickers
   const getResults = () => {
     let input = value.trim().toUpperCase();
     let inputLength = input.length;
@@ -16,6 +17,7 @@ const Searchbar = ({ tickers, setDisplayStocks }) => {
     setDisplayStocks(matches)
   }
 
+  // Upon value change, call getResults if value is truthy
   useEffect(() => {
     if (!value) return;
     getResults();
