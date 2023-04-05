@@ -27,6 +27,12 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
+Add method to remove all stock components when searchbar goes from populated to empty
+
+Try displaying all stocks and then narrowing based on search
+
+Refactor search logic
+
 Comment code
 
 Add ability to change price of stock with exact values for both dollars & percentage
