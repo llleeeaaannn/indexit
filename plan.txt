@@ -33,6 +33,8 @@ Try displaying all stocks and then narrowing based on search
 
 Refactor search logic
 
+Ensure changes arent lost when stock compoenents are changed then rerendered after search
+
 Comment code
 
 Add ability to change price of stock with exact values for both dollars & percentage
