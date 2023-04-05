@@ -1,22 +1,27 @@
 import styles from '../styles/searchbar.module.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Searchbar = ({  }) => {
 
   const testTickers = ['AMD', 'AAPL', 'amat', 'pool', 'MSFT']
 
-  const [value, setValue] = useState();
+  const [value, setValue] = useState('');
 
   const [results, setResults] = useState();
 
   const getResults = () => {
     let input = value.trim().toUpperCase();
-    let inputLength = input.length();
+    let inputLength = input.length;
 
     if (inputLength === 0) return [];
     let match = testTickers.filter(ticker => ticker.toUpperCase().slice(0, inputLength) === input);
     console.log(match);
   }
+
+  useEffect(() => {
+    if (!value) return;
+    getResults();
+  })
 
   return (
     <div className={styles.searchbar}>
@@ -26,6 +31,8 @@ const Searchbar = ({  }) => {
           type="text"
           value={value}
           onChange={(e) => setValue(e.target.value)}
+        />
+
       </form>
 
     </div>
