@@ -1,9 +1,7 @@
 import styles from '../styles/searchbar.module.css';
 import { useState, useEffect } from 'react';
 
-const Searchbar = ({  }) => {
-
-  const testTickers = ['AMD', 'AAPL', 'amat', 'pool', 'MSFT']
+const Searchbar = ({ tickers, setDisplayStocks }) => {
 
   const [value, setValue] = useState('');
 
@@ -14,8 +12,8 @@ const Searchbar = ({  }) => {
     let inputLength = input.length;
 
     if (inputLength === 0) return [];
-    let match = testTickers.filter(ticker => ticker.toUpperCase().slice(0, inputLength) === input);
-    console.log(match);
+    let matches = tickers.filter(ticker => ticker.toUpperCase().slice(0, inputLength) === input);
+    setDisplayStocks(matches)
   }
 
   useEffect(() => {

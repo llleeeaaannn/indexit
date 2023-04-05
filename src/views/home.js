@@ -8,7 +8,7 @@ import stocksData from '../data/stocksdata';
 const Home = () => {
 
   const [tickers, setTickers] = useState([]);
-  const [displayStocks, setDisplayStocks] = useState(['AMD', 'AAPL', 'MSFT'])
+  const [displayStocks, setDisplayStocks] = useState([])
   const [stockStates, setStockStates] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -16,7 +16,7 @@ const Home = () => {
     const getHoldings = async function() {
       const response = await fetch('http://localhost:4000/holdings');
       const json = await response.json();
-      const {states, tickersArray} = createStockStates(json)
+      const {states, tickersArray} = createStockStates(json);
       setStockStates(states);
       setTickers(tickersArray);
       setLoading(false);
@@ -35,10 +35,11 @@ const Home = () => {
         name: data[key].name,
         originalprice: data[key].originalprice
       }
-      tickers.push(key);
+      tickersArray.push(key);
     }
     return {states, tickersArray};
   }
+
 
   const updateStockState = (key, updatedState) => {
     setStockStates((oldState) => ({
@@ -53,7 +54,7 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
-      <Searchbar />
+      <Searchbar tickers={tickers} setDisplayStocks={setDisplayStocks}/>
 
       {
         displayStocks.map((stock, i) => (
