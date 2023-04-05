@@ -21,7 +21,7 @@ const Searchbar = ({  }) => {
   useEffect(() => {
     if (!value) return;
     getResults();
-  })
+  }, [value])
 
   return (
     <div className={styles.searchbar}>
