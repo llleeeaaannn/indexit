@@ -7,6 +7,7 @@ import stocksData from '../data/stocksdata';
 
 const Home = () => {
 
+  const [tickers, setTickers] = useState([]);
   const [stockStates, setStockStates] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -14,7 +15,9 @@ const Home = () => {
     const getHoldings = async function() {
       const response = await fetch('http://localhost:4000/holdings');
       const json = await response.json();
-      setStockStates(() => createStockStates(json));
+      const {states, tickersArray} = createStockStates(json)
+      setStockStates(states);
+      setTickers(tickersArray);
       setLoading(false);
     }
     getHoldings();
@@ -22,6 +25,7 @@ const Home = () => {
 
   const createStockStates = (data) => {
     const states = {};
+    const tickers = [];
     for (let key in data) {
       states[key] = {
         price: data[key].price,
@@ -30,8 +34,9 @@ const Home = () => {
         name: data[key].name,
         originalprice: data[key].originalprice
       }
+      tickers.push(key);
     }
-    return states;
+    return {states, tickersArray};
   }
 
   const updateStockState = (key, updatedState) => {
