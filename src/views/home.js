@@ -15,7 +15,8 @@ const Home = () => {
   // Call createStockStates upon page load and assign returned data to state
   useEffect(() => {
     const getHoldings = async function() {
-      const response = await fetch('http://localhost:4000/holdings');
+      // const response = await fetch('http://localhost:4000/holdings'); // For local
+      const response = await fetch('https://llleeeaaannn-automatic-couscous-vjrq6q676vr3j6-4000.preview.app.github.dev/holdings'); //For codespaces
       const json = await response.json();
       const {states, tickersArray} = createStockStates(json);
       setStockStates(states);
