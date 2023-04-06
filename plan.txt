@@ -27,6 +27,8 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
+Set up a GitHub codespace for IndexIt and its API as a test
+
 Add method to remove all stock components when searchbar goes from populated to empty
 
 Try displaying all stocks and then narrowing based on search
