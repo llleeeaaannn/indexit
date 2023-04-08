@@ -37,7 +37,7 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
   }
 
   return (
-    <div className={styles.stock}>
+    <div className={styles.stock} id={dataKey}>
 
       <div className={styles.overview}>
         <h3>{ stockState.ticker }</h3>

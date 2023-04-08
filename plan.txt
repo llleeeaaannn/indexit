@@ -30,6 +30,7 @@ To Do:
 Searchbar not functioning correctly. Issues:
 - First entered character returns correct stocks
 - After that thr result doesnt match (Shows wrong stocks and not even right stocks)
+Conclusion: Stock that shows appears to match but elements within the component do not reflect the stock
 
 Add method to remove all stock components when searchbar goes from populated to empty
 

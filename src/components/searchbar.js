@@ -9,11 +9,13 @@ const Searchbar = ({ tickers, setDisplayStocks }) => {
 
   // Convert input to uppercase, ensure it is truthy, search against all tickers, set displayStocks state to matching tickers
   const getResults = () => {
+    console.log(value);
     let input = value.trim().toUpperCase();
     let inputLength = input.length;
 
     if (inputLength === 0) return [];
     let matches = tickers.filter(ticker => ticker.toUpperCase().slice(0, inputLength) === input);
+    console.log(matches);
     setDisplayStocks(matches)
   }
 
