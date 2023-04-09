@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 const Searchbar = ({ tickers, setDisplayStocks }) => {
 
+  // Searchbar value
   const [value, setValue] = useState('');
 
   // Convert input to uppercase, ensure it is truthy, search against all tickers, set displayStocks state to matching tickers

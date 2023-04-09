@@ -12,6 +12,7 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
     updateStockState(dataKey, stockState);
   }, [stockState])
 
+  // Arbitrary percent until API is implemented
   const stockPercent = 1.02;
 
   // Function to calculate percent change of price and prepend symbol if negative
@@ -20,6 +21,7 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
     return percent > 0 ? `+${percent}` : percent;
   }
 
+  // Styling for sliders
   const sliderStyles = {
     track: {
       backgroundColor: '#E6E6E6'
