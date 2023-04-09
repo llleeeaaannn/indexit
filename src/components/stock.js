@@ -2,9 +2,7 @@ import styles from '../styles/stock.module.css';
 import { useState, useEffect } from 'react';
 import Slider from 'react-input-slider';
 
-const Stock = ({ dataKey, stock, updateStockState }) => {
-
-  const showSlider = true;
+const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
 
   // Individual stock state
   const [stockState, setStockState] = useState(stock)

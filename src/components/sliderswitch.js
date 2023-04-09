@@ -5,11 +5,11 @@ const SliderSwitch = ({ setShowSlider }) => {
   return (
     <div className={styles.container}>
       <div className={styles.switch}>
-        <div>
+        <div onClick={() => setShowSlider(true)}>
           Slider
         </div>
 
-        <div>
+        <div onClick={() => setShowSlider(false)}>
           Value
         </div>
       </div>

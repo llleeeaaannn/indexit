@@ -65,7 +65,7 @@ const Home = () => {
         setDisplayLimit={setDisplayLimit}
       />
 
-      <SliderSwitch setShowSlider={setShowSlider}/>
+      <SliderSwitch setShowSlider={setShowSlider} />
 
       {
         displayStocks.slice(0, displayLimit).map((stock, i) => (
