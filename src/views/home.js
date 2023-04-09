@@ -56,7 +56,12 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
-      <Searchbar tickers={tickers} setDisplayStocks={setDisplayStocks}/>
+
+      <Searchbar
+        tickers={tickers} 
+        setDisplayStocks={setDisplayStocks}
+        setDisplayLimit={setDisplayLimit}
+      />
 
       {
         displayStocks.slice(0, displayLimit).map((stock, i) => (
@@ -68,7 +73,17 @@ const Home = () => {
           />
         ))
       }
-      
+
+      {
+        displayStocks.length > displayLimit &&
+          <button
+            className={styles.more}
+            onClick={() => setDisplayLimit((prevDisplayLimit) => prevDisplayLimit + 10)}
+          >
+            See more
+          </button>
+      }
+
     </div>
   )
 }

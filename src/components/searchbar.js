@@ -1,7 +1,7 @@
 import styles from '../styles/searchbar.module.css';
 import { useState, useEffect } from 'react';
 
-const Searchbar = ({ tickers, setDisplayStocks }) => {
+const Searchbar = ({ tickers, setDisplayStocks, setDisplayLimit }) => {
 
   // Searchbar value
   const [value, setValue] = useState('');
