@@ -66,7 +66,7 @@ const Home = () => {
       {
         displayStocks.map((stock, i) => (
           <Stock
-            key={i}
+            key={stock}
             dataKey={stock}
             stock={stockStates[stock]}
             updateStockState={updateStockState}
