@@ -58,7 +58,7 @@ const Home = () => {
     <div className={styles.home}>
 
       <Searchbar
-        tickers={tickers} 
+        tickers={tickers}
         setDisplayStocks={setDisplayStocks}
         setDisplayLimit={setDisplayLimit}
       />
@@ -76,12 +76,13 @@ const Home = () => {
 
       {
         displayStocks.length > displayLimit &&
-          <button
-            className={styles.more}
-            onClick={() => setDisplayLimit((prevDisplayLimit) => prevDisplayLimit + 10)}
-          >
-            See more
-          </button>
+          <div className={styles.more}>
+            <button
+              onClick={() => setDisplayLimit((prevDisplayLimit) => prevDisplayLimit + 10)}
+            >
+              See more
+            </button>
+          </div>
       }
 
     </div>
