@@ -28,6 +28,8 @@ https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-m
 
 To Do:
 Add ability to change price of stock with exact values for both dollars & percentage
+- Add input fields and associated logic
+- Add styling when switch is clicked
 
 Figure out how to get updated prices for each component despite api limits:
 - Make calls every 15 minutes from the backend
