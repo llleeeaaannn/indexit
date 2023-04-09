@@ -28,7 +28,7 @@ const Home = () => {
 
   useEffect(() => {
     console.log(displayStocks);
-  })
+  }, [displayStocks])
 
   // Create parent stock object and array of all tickers
   const createStockStates = (data) => {
