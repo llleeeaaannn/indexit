@@ -53,8 +53,13 @@
   color: red;
 }
 
-.updated span {
+.updated span,
+.updated input {
   font-size: 1.5rem;
+}
+
+.updated input{
+  width: 3rem;
 }
 
 .slider {

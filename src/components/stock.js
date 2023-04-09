@@ -4,6 +4,8 @@ import Slider from 'react-input-slider';
 
 const Stock = ({ dataKey, stock, updateStockState }) => {
 
+  const showSlider = true;
+
   // Individual stock state
   const [stockState, setStockState] = useState(stock)
 
@@ -51,30 +53,37 @@ const Stock = ({ dataKey, stock, updateStockState }) => {
         </div>
       </div>
 
-      <div className={styles.slider}>
-        <Slider
-          axis="x"
-          xstep={0.01}
-          xmin={0}
-          xmax={stockState.originalprice * 2}
-          x={stockState.price}
-          styles={sliderStyles}
-          onChange={({ x }) => setStockState({
-            price: Number(x.toFixed(2)),
-            weight: stockState.weight,
-            ticker: stockState.ticker,
-            name: stockState.name,
-            originalprice: stockState.originalprice
-          })}
-        />
-      </div>
+      { showSlider &&
+        <div className={styles.slider}>
+          <Slider
+            axis="x"
+            xstep={0.01}
+            xmin={0}
+            xmax={stockState.originalprice * 2}
+            x={stockState.price}
+            styles={sliderStyles}
+            onChange={({ x }) => setStockState({
+              price: Number(x.toFixed(2)),
+              weight: stockState.weight,
+              ticker: stockState.ticker,
+              name: stockState.name,
+              originalprice: stockState.originalprice
+            })}
+          />
+        </div>
+      }
+
+      { !showSlider &&
+        <div className={styles.priceInputs}>
+        </div>
+      }
 
       <div className={`
         ${styles.updated}
         ${stockState.price > stockState.originalprice ? styles.positive : ''}
         ${stockState.price < stockState.originalprice ? styles.negative : ''}
       `}>
-        <span>${ stockState.price }</span>
+        <span>{ stockState.price }</span>
         <span>{ percentChange() }%</span>
       </div>
 
