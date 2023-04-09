@@ -27,11 +27,6 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
-Decide whether all stocks should show by default or none:
-- All is maybe better UX but makes it laggy and potentially slow to load
-- None is maybe worse UX and looks worse but not laggy
-- Potentially only show top 10 etc... and user can search for more detail or click a see moore button which reveals more
-
 Add ability to change price of stock with exact values for both dollars & percentage
 
 Figure out how to get updated prices for each component despite api limits:
