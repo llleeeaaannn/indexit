@@ -27,13 +27,10 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
-Add method to remove all stock components when searchbar goes from populated to empty
-
-Try displaying all stocks and then narrowing based on search
-
-Refactor search logic
-
-Ensure changes arent lost when stock compoenents are changed then rerendered after search
+Decide whether all stocks should show by default or none:
+- All is maybe better UX but makes it laggy and potentially slow to load
+- None is maybe worse UX and looks worse but not laggy
+- Potentially only show top 10 etc... and user can search for more detail or click a see moore button which reveals more
 
 Comment code
 
