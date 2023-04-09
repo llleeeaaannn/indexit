@@ -23,7 +23,6 @@ const Searchbar = ({ tickers, setDisplayStocks }) => {
 
   // Upon value change, call getResults if value is truthy
   useEffect(() => {
-    if (!value) return;
     getResults();
   }, [value])
 
