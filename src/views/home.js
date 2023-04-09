@@ -7,6 +7,7 @@ const Home = () => {
 
   const [tickers, setTickers] = useState([]);
   const [displayStocks, setDisplayStocks] = useState([])
+  const [displayLimit, setDisplayLimit] = useState(10);
   const [stockStates, setStockStates] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -58,7 +59,7 @@ const Home = () => {
       <Searchbar tickers={tickers} setDisplayStocks={setDisplayStocks}/>
 
       {
-        displayStocks.map((stock, i) => (
+        displayStocks.slice(0, displayLimit).map((stock, i) => (
           <Stock
             key={stock}
             dataKey={stock}
@@ -67,6 +68,7 @@ const Home = () => {
           />
         ))
       }
+      
     </div>
   )
 }
