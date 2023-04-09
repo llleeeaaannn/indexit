@@ -1,9 +1,7 @@
 import styles from '../styles/home.module.css';
 import { useState, useEffect } from 'react';
 import Stock from '../components/stock';
-import Test from '../components/test';
 import Searchbar from '../components/searchbar';
-import stocksData from '../data/stocksdata';
 
 const Home = () => {
 
