@@ -22,6 +22,7 @@ const Searchbar = ({ tickers, setDisplayStocks, setDisplayLimit }) => {
 
   // Upon value change, call getResults if value is truthy
   useEffect(() => {
+    setDisplayLimit(10);
     getResults();
   }, [value])
 
