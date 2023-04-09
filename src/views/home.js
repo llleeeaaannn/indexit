@@ -2,6 +2,7 @@ import styles from '../styles/home.module.css';
 import { useState, useEffect } from 'react';
 import Stock from '../components/stock';
 import Searchbar from '../components/searchbar';
+import SliderSwitch from '../components/sliderswitch';
 
 const Home = () => {
 
@@ -10,6 +11,7 @@ const Home = () => {
   const [displayLimit, setDisplayLimit] = useState(10);
   const [stockStates, setStockStates] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [showSlider, setShowSlider] = useState(true);
 
   // Call createStockStates upon page load and assign returned data to state
   useEffect(() => {
@@ -63,11 +65,14 @@ const Home = () => {
         setDisplayLimit={setDisplayLimit}
       />
 
+      <SliderSwitch setShowSlider={setShowSlider}/>
+
       {
         displayStocks.slice(0, displayLimit).map((stock, i) => (
           <Stock
             key={stock}
             dataKey={stock}
+            showSlider={showSlider}
             stock={stockStates[stock]}
             updateStockState={updateStockState}
           />

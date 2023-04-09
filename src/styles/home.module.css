@@ -5,6 +5,7 @@
   padding: 3rem;
 }
 
+/* More button styling */
 .more {
   display: flex;
   flex-direction: row;
@@ -19,4 +20,22 @@
   color: var(--black3FC);
   background-color: var(--grey1BG);
   cursor: pointer;
+}
+
+/* Slider Switch Styling */
+.sliderSwitchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.sliderSwitch {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.sliderSwitch > div {
+  border: 1px solid red;
 }
