@@ -1,0 +1,17 @@
+/* Slider Switch Styling */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.switch {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.switch > div {
+  border: 1px solid red;
+}
