@@ -73,6 +73,8 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
 
       { !showSlider &&
         <div className={styles.priceInputs}>
+          <input type="number" className={styles.price}>
+          <input type="number" className={styles.percent}>
         </div>
       }
 
