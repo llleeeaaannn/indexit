@@ -23,12 +23,17 @@ const Home = () => {
       const {states, tickersArray} = createStockStates(json);
       setStockStates(states);
       setTickers(tickersArray);
-      console.log(tickersArray);
-      console.log(states);
       setLoading(false);
     }
     getHoldings();
   }, []);
+
+  // Set state with test data instead of fetching
+  // useEffect(() => {
+  //   setStockStates(stocktestdata);
+  //   setTickers(tickertestdata);
+  //   setLoading(false);
+  // }, []);
 
   // Create parent stock object and array of all tickers
   const createStockStates = (data) => {
