@@ -22,6 +22,8 @@ const Home = () => {
       const {states, tickersArray} = createStockStates(json);
       setStockStates(states);
       setTickers(tickersArray);
+      console.log(tickersArray);
+      console.log(states);
       setLoading(false);
     }
     getHoldings();
