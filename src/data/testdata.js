@@ -4035,3 +4035,5 @@ const stocktestdata = {
         "originalprice": 241
     }
 }
+
+export { tickertestdata, stocktestdata }

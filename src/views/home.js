@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Stock from '../components/stock';
 import Searchbar from '../components/searchbar';
 import SliderSwitch from '../components/sliderswitch';
+import { tickertestdata, stocktestdata } from '../data/testdata';
 
 const Home = () => {
 
