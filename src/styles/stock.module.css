@@ -73,3 +73,15 @@
 .slider > div {
   width: 100%;
 }
+
+.priceInputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.priceInputs input {
+  border: 1px solid red;
+}
