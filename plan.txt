@@ -31,6 +31,10 @@ Write logic to enable percent change field to be negative
 
 Style input fields correctly
 
+Potentially remove up and down buttons on input fields
+
+Add min logic to percent input field
+
 Figure out how to get updated prices for each component despite api limits:
 - Make calls every 15 minutes from the backend
 - Use different API's
