@@ -15,11 +15,16 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
   // Arbitrary percent until API is implemented
   const stockPercent = 1.02;
 
-  // Function to calculate percent change of price and prepend symbol if negative
+  // Function to calculate percent change of price and prepend symbol if negative (Old one with formatting)
+  // const percentChange = () => {
+  //   const percent = (stockState.price / stockState.originalprice * 100 - 100).toFixed(2);
+  //   return percent > 0 ? `+${percent}` : percent;
+  // }
+
   const percentChange = () => {
     const percent = (stockState.price / stockState.originalprice * 100 - 100).toFixed(2);
-    return percent > 0 ? `+${percent}` : percent;
-  }
+    return percent > 0 ? `${percent}` : percent;
+  };
 
   // Styling for sliders
   const sliderStyles = {
@@ -73,8 +78,36 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
 
       { !showSlider &&
         <div className={styles.priceInputs}>
-          <input type="number" className={styles.price} />
-          <input type="number" className={styles.percent} />
+          <input
+            type="number"
+            className={styles.price}
+            value={stockState.price}
+            onChange={(e) => setStockState({
+              price: Number(e.target.value),
+              weight: stockState.weight,
+              ticker: stockState.ticker,
+              name: stockState.name,
+              originalprice: stockState.originalprice
+            })}
+          />
+          
+          <input
+            type="number"
+            className={styles.percent}
+            value={percentChange()}
+            onChange={(e) => {
+              const percentage = Number(e.target.value) / 100;
+              const newPrice = stockState.originalprice * (1 + percentage);
+              setStockState({
+                price: Number(newPrice.toFixed(2)),
+                weight: stockState.weight,
+                ticker: stockState.ticker,
+                name: stockState.name,
+                originalprice: stockState.originalprice
+              });
+            }}
+          />
+
         </div>
       }
 

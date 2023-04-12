@@ -15,25 +15,25 @@ const Home = () => {
   const [showSlider, setShowSlider] = useState(true);
 
   // Call createStockStates upon page load and assign returned data to state
-  useEffect(() => {
-    const getHoldings = async function() {
-      const response = await fetch('http://localhost:4000/holdings'); // For local
-      // const response = await fetch('https://llleeeaaannn-automatic-couscous-vjrq6q676vr3j6-4000.preview.app.github.dev/holdings'); //For codespaces
-      const json = await response.json();
-      const {states, tickersArray} = createStockStates(json);
-      setStockStates(states);
-      setTickers(tickersArray);
-      setLoading(false);
-    }
-    getHoldings();
-  }, []);
+  // useEffect(() => {
+  //   const getHoldings = async function() {
+  //     const response = await fetch('http://localhost:4000/holdings'); // For local
+  //     // const response = await fetch('https://llleeeaaannn-automatic-couscous-vjrq6q676vr3j6-4000.preview.app.github.dev/holdings'); //For codespaces
+  //     const json = await response.json();
+  //     const {states, tickersArray} = createStockStates(json);
+  //     setStockStates(states);
+  //     setTickers(tickersArray);
+  //     setLoading(false);
+  //   }
+  //   getHoldings();
+  // }, []);
 
   // Set state with test data instead of fetching
-  // useEffect(() => {
-  //   setStockStates(stocktestdata);
-  //   setTickers(tickertestdata);
-  //   setLoading(false);
-  // }, []);
+  useEffect(() => {
+    setStockStates(stocktestdata);
+    setTickers(tickertestdata);
+    setLoading(false);
+  }, []);
 
   // Create parent stock object and array of all tickers
   const createStockStates = (data) => {
