@@ -15,16 +15,19 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
   // Arbitrary percent until API is implemented
   const stockPercent = 1.02;
 
-  // Function to calculate percent change of price and prepend symbol if negative (Old one with formatting)
-  // const percentChange = () => {
-  //   const percent = (stockState.price / stockState.originalprice * 100 - 100).toFixed(2);
-  //   return percent > 0 ? `+${percent}` : percent;
-  // }
-
+  // Function to calculate percent change of price to 2 decimal places and remove decimals if they're unecessary
   const percentChange = () => {
-    const percent = (stockState.price / stockState.originalprice * 100 - 100).toFixed(2);
-    return percent > 0 ? `${percent}` : percent;
+    let percent = (stockState.price / stockState.originalprice * 100 - 100).toFixed(2);
+    percent = parseFloat(percent) * 10 % 1 === 0 ? parseFloat(percent).toFixed(1) : percent;
+    percent = parseFloat(percent) % 1 === 0 ? parseInt(percent) : percent;
+    return parseFloat(percent);
   };
+
+  // Function to add a + before the percent if it is positive
+  const formatPercent = (percent) => {
+    if (percent > 0) return `+${percent}`;
+    return percent;
+  }
 
   // Styling for sliders
   const sliderStyles = {
@@ -116,8 +119,8 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
         ${stockState.price > stockState.originalprice ? styles.positive : ''}
         ${stockState.price < stockState.originalprice ? styles.negative : ''}
       `}>
-        <span>{ stockState.price }</span>
-        <span>{ percentChange() }%</span>
+        <span>${ stockState.price }</span>
+        <span>{ formatPercent(percentChange()) }%</span>
       </div>
 
     </div>

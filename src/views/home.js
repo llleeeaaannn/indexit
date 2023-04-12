@@ -8,7 +8,7 @@ import { tickertestdata, stocktestdata } from '../data/testdata';
 const Home = () => {
 
   const [tickers, setTickers] = useState([]);
-  const [displayStocks, setDisplayStocks] = useState([])
+  const [displayStocks, setDisplayStocks] = useState([]);
   const [displayLimit, setDisplayLimit] = useState(10);
   const [stockStates, setStockStates] = useState(null);
   const [loading, setLoading] = useState(true);
