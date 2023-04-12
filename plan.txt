@@ -27,6 +27,10 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
+Fix formatting of price and percentage
+
+Style input fields correctly
+
 Add ability to change price of stock with exact values for both dollars & percentage
 - Add input fields and associated logic
 - Add styling when switch is clicked
