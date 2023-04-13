@@ -27,7 +27,7 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
-Write logic to enable percent change field to be negative
+Prevent price from being negative 
 
 Style input fields correctly
 
