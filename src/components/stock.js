@@ -96,10 +96,14 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
           
           <input
             type="number"
+            min={-100.00}
+            step={0.01}
             className={styles.percent}
             value={percentChange()}
             onChange={(e) => {
-              const percentage = Number(e.target.value) / 100;
+              const enteredValue = Number(e.target.value);
+              const clampedValue = Math.max(enteredValue, -100);
+              const percentage = clampedValue / 100;
               const newPrice = stockState.originalprice * (1 + percentage);
               setStockState({
                 price: Number(newPrice.toFixed(2)),
