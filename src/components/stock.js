@@ -69,7 +69,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
             x={stockState.price}
             styles={sliderStyles}
             onChange={({ x }) => setStockState({
-              price: Number(x.toFixed(2)),
+              price: Math.max(Number(x.toFixed(2)), 0),
               weight: stockState.weight,
               ticker: stockState.ticker,
               name: stockState.name,
@@ -86,7 +86,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
             className={styles.price}
             value={stockState.price}
             onChange={(e) => setStockState({
-              price: Number(e.target.value),
+              price: Math.max(Number(e.target.value), 0),
               weight: stockState.weight,
               ticker: stockState.ticker,
               name: stockState.name,
