@@ -33,7 +33,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
   const handlePriceChange = (newPrice) => {
     setStockState((prevState) => ({
       ...prevState,
-      price: Math.max(newPrice, 0), // Ensure price is not less than 0
+      price: Math.max(newPrice, 0).toFixed(2), // Ensure price is not less than 0
     }));
   };
 
@@ -76,7 +76,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
             xmax={stockState.originalprice * 2}
             x={stockState.price}
             styles={sliderStyles}
-            onChange={({ x }) => { handlePriceChange(Number(x.toFixed(2))) }}
+            onChange={({ x }) => { handlePriceChange(Number(x)) }}
           />
         </div>
       }
