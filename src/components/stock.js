@@ -29,6 +29,14 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
     return percent;
   }
 
+  // Function to handle price change
+  const handlePriceChange = (newPrice) => {
+    setStockState((prevState) => ({
+      ...prevState,
+      price: Math.max(newPrice, 0), // Ensure price is not less than 0
+    }));
+  };
+
   // Styling for sliders
   const sliderStyles = {
     track: {
