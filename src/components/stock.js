@@ -76,13 +76,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
             xmax={stockState.originalprice * 2}
             x={stockState.price}
             styles={sliderStyles}
-            onChange={({ x }) => setStockState({
-              price: Math.max(Number(x.toFixed(2)), 0),
-              weight: stockState.weight,
-              ticker: stockState.ticker,
-              name: stockState.name,
-              originalprice: stockState.originalprice
-            })}
+            onChange={({ x }) => { handlePriceChange(Number(x.toFixed(2))) }}
           />
         </div>
       }
@@ -93,13 +87,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
             type="number"
             className={styles.price}
             value={stockState.price}
-            onChange={(e) => setStockState({
-              price: Math.max(Number(e.target.value), 0),
-              weight: stockState.weight,
-              ticker: stockState.ticker,
-              name: stockState.name,
-              originalprice: stockState.originalprice
-            })}
+            onChange={(e) => { handlePriceChange(Number(e.target.value)) }}
           />
           
           <input
@@ -113,13 +101,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
               const clampedValue = Math.max(enteredValue, -100);
               const percentage = clampedValue / 100;
               const newPrice = stockState.originalprice * (1 + percentage);
-              setStockState({
-                price: Number(newPrice.toFixed(2)),
-                weight: stockState.weight,
-                ticker: stockState.ticker,
-                name: stockState.name,
-                originalprice: stockState.originalprice
-              });
+              handlePriceChange(newPrice);
             }}
           />
 
