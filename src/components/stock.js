@@ -9,6 +9,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
 
   // Update parent state when individual stock state changes
   useEffect(() => {
+    console.log(stockState);
     updateStockState(dataKey, stockState);
   }, [stockState])
 
@@ -23,6 +24,14 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
     return parseFloat(percent);
   };
 
+  // Function to parse price and remove unnecessary decimals
+  const parsePrice = (price) => {
+    let parsedPrice = parseFloat(price).toFixed(2);
+    parsedPrice = parseFloat(parsedPrice) * 10 % 1 === 0 ? parseFloat(parsedPrice).toFixed(1) : parsedPrice;
+    parsedPrice = parseFloat(parsedPrice) % 1 === 0 ? parseInt(parsedPrice) : parsedPrice;
+    return parseFloat(parsedPrice);
+  };
+
   // Function to add a + before the percent if it is positive
   const formatPercent = (percent) => {
     if (percent > 0) return `+${percent}`;
@@ -33,7 +42,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
   const handlePriceChange = (newPrice) => {
     setStockState((prevState) => ({
       ...prevState,
-      price: Math.max(newPrice, 0).toFixed(2), // Ensure price is not less than 0
+      price: parsePrice(Math.max(newPrice, 0)), // Ensure price is not less than 0
     }));
   };
 
@@ -89,7 +98,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
             value={stockState.price}
             onChange={(e) => { handlePriceChange(Number(e.target.value)) }}
           />
-          
+
           <input
             type="number"
             min={-100.00}
