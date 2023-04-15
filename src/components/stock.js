@@ -25,10 +25,18 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
   };
 
   // Function to parse price and remove unnecessary decimals
+  // const parsePrice = (price) => {
+  //   let parsedPrice = parseFloat(price).toFixed(2);
+  //   parsedPrice = parseFloat(parsedPrice) * 10 % 1 === 0 ? parseFloat(parsedPrice).toFixed(1) : parsedPrice;
+  //   parsedPrice = parseFloat(parsedPrice) % 1 === 0 ? parseInt(parsedPrice) : parsedPrice;
+  //   return parseFloat(parsedPrice);
+  // };
+
+  // Function to parse price and remove unnecessary decimals
   const parsePrice = (price) => {
     let parsedPrice = parseFloat(price).toFixed(2);
-    parsedPrice = parseFloat(parsedPrice) * 10 % 1 === 0 ? parseFloat(parsedPrice).toFixed(1) : parsedPrice;
-    parsedPrice = parseFloat(parsedPrice) % 1 === 0 ? parseInt(parsedPrice) : parsedPrice;
+    parsedPrice = parseFloat(parsedPrice).toString();
+    parsedPrice = parsedPrice.endsWith('.00') ? parseInt(parsedPrice) : parsedPrice.replace(/0+$/, '');
     return parseFloat(parsedPrice);
   };
 
