@@ -27,15 +27,13 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
-Prevent price from being negative 
-
 Style input fields correctly
 
 Potentially remove up and down buttons on input fields
-
-Add min logic to percent input field
 
 Figure out how to get updated prices for each component despite api limits:
 - Make calls every 15 minutes from the backend
 - Use different API's
 - Find an API with no limit
+- Call APIs from within the stock component and only when they are rendered.
+- Add logic whereby if the API was previously called by a stock, it wont be called again (true/false field in parent logic)
