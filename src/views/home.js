@@ -40,10 +40,10 @@ const Home = () => {
     const tickersArray = [];
     for (let key in data) {
       states[key] = {
-        price: data[key].price,
-        weight: data[key].weight,
-        ticker: data[key].ticker,
         name: data[key].name,
+        ticker: data[key].ticker,
+        weight: data[key].weight,
+        price: data[key].price,
         originalprice: data[key].originalprice
       }
       tickersArray.push(key);
