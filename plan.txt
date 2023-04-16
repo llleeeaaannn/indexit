@@ -27,13 +27,14 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
-Style input fields correctly
+Styling
 
 Potentially remove up and down buttons on input fields
 
 Figure out how to get updated prices for each component despite api limits:
-- Make calls every 15 minutes from the backend
+- Make calls at beginning of day
+- Store prices with other data from XLSX in file
 - Use different API's
 - Find an API with no limit
-- Call APIs from within the stock component and only when they are rendered.
-- Add logic whereby if the API was previously called by a stock, it wont be called again (true/false field in parent logic)
+- No API called from within frontend (only backend)
+- Frontend calls backend
