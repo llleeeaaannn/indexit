@@ -28,3 +28,7 @@
   border-bottom-right-radius: 0.25rem;
 }
 
+.switch .active {
+  background-color: green !important;
+}
+
