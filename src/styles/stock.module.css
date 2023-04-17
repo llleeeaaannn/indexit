@@ -83,5 +83,26 @@
 }
 
 .priceInputs input {
-  border: 1px solid red;
+  width: 10rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: var(--fs-md);
+  background-color: var(--whiteBG);
 }
+
+.priceInputs input :active {
+  border: 1px solid blue;
+}
+
+/* Styling to remove spinner buttons from input elements */
+.priceInputs input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+.priceInputs input::-webkit-outer-spin-button,
+.priceInputs input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
