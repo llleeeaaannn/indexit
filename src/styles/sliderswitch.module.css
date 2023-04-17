@@ -9,9 +9,22 @@
 .switch {
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
 }
 
 .switch > div {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   border: 1px solid red;
+  cursor: pointer;
 }
+
+.switch :first-child {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.switch :last-child {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
