@@ -91,10 +91,6 @@
   background-color: var(--whiteBG);
 }
 
-.priceInputs input :active {
-  border: 1px solid blue;
-}
-
 /* Styling to remove spinner buttons from input elements */
 .priceInputs input[type='number'] {
   -moz-appearance:textfield;
