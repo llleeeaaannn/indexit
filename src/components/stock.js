@@ -69,11 +69,7 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
       <div className={styles.overview}>
         <h3>{ stockState.ticker }</h3>
         <h4>{ stockState.name }</h4>
-        <div className={styles.price}>
-          <span>${ stockState.originalprice }</span>
-          <span>/</span>
-          <span>{ stockPercent }%</span>
-        </div>
+        <span>${ stockState.originalprice }</span>
       </div>
 
       { showSlider &&

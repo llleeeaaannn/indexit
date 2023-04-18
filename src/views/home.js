@@ -72,7 +72,9 @@ const Home = () => {
         setDisplayLimit={setDisplayLimit}
       />
 
-      <SliderSwitch showSlider={showSlider} setShowSlider={setShowSlider} />
+      {
+        !!displayStocks.length && <SliderSwitch showSlider={showSlider} setShowSlider={setShowSlider} />
+      }
 
       {
         displayStocks.slice(0, displayLimit).map((stock, i) => (
@@ -95,6 +97,10 @@ const Home = () => {
               See more
             </button>
           </div>
+      }
+
+      {
+        !displayStocks.length && <p>There are no matches</p>
       }
 
     </div>
