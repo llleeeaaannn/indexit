@@ -11,6 +11,7 @@ const Calculate = ({ stockStates }) => {
 
     useEffect(() => {
         console.log('Stock States Changed');
+        console.log(stockStates);
     }, [stockStates])
 
   return (

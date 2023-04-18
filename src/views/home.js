@@ -1,6 +1,7 @@
 import styles from '../styles/home.module.css';
 import { useState, useEffect } from 'react';
 import Stock from '../components/stock';
+import Calculate from '../components/calculate';
 import Searchbar from '../components/searchbar';
 import SliderSwitch from '../components/sliderswitch';
 import { tickertestdata, stocktestdata } from '../data/testdata';
@@ -66,7 +67,7 @@ const Home = () => {
   return (
     <div className={styles.home}>
 
-      
+      <Calculate stockStates={stockStates} />
 
       <Searchbar
         tickers={tickers}
