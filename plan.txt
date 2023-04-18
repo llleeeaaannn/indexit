@@ -27,14 +27,9 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
-Styling
-
-Potentially remove up and down buttons on input fields
-
 Figure out how to get updated prices for each component despite api limits:
-- Make calls at beginning of day
-- Store prices with other data from XLSX in file
-- Use different API's
-- Find an API with no limit
 - No API called from within frontend (only backend)
-- Frontend calls backend
+- Make calls once per day, ideally just after market open
+- Store prices with other data from XLSX in file
+- Frontend then calls backend for data
+- Batch stocks into batches to be called one after another
