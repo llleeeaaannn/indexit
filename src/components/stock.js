@@ -9,12 +9,8 @@ const Stock = ({ dataKey, stock, showSlider, updateStockState }) => {
 
   // Update parent state when individual stock state changes
   useEffect(() => {
-    console.log(stockState);
     updateStockState(dataKey, stockState);
   }, [stockState])
-
-  // Arbitrary percent until API is implemented
-  const stockPercent = 1.02;
 
   // Function to calculate percent change of price to 2 decimal places and remove decimals if they're unecessary
   const percentChange = () => {

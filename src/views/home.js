@@ -66,6 +66,8 @@ const Home = () => {
   return (
     <div className={styles.home}>
 
+      
+
       <Searchbar
         tickers={tickers}
         setDisplayStocks={setDisplayStocks}
