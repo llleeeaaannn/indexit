@@ -27,9 +27,6 @@ Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
 To Do:
-Figure out how to get updated prices for each component despite api limits:
-- No API called from within frontend (only backend)
-- Make calls once per day, ideally just after market open
-- Store prices with other data from XLSX in file
-- Frontend then calls backend for data
-- Batch stocks into batches to be called one after another
+Write backend logic to call getHoldingsData and getHoldingsPrices at defined times each day (exclude weekends etc..)
+Write logic tp get holdings file from relevant website once a day (with backup if fail...)
+Write logic for backend to accept call from frontend and return data from prices.json file
