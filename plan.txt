@@ -29,4 +29,5 @@ https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-m
 To Do:
 Write backend logic to call getHoldingsData and getHoldingsPrices at defined times each day (exclude weekends etc..)
 Write logic tp get holdings file from relevant website once a day (with backup if fail...)
-Write logic for backend to accept call from frontend and return data from prices.json file
+
+Add handling on backend when storing data to handle proeprties not being there on data returned from API call (no price, no percent, cant find symbol...)
