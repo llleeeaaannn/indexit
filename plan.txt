@@ -36,3 +36,4 @@ Add logic to handle week days where market is closed. Most liley has to be error
 Add logic to handle API calls where the symbol is not recognised (for example:  symbol: 'CASH_USD')
 
 Add handling on backend when storing data to handle proeprties not being there on data returned from API call (no price, no percent, cant find symbol...)
+
