@@ -31,6 +31,8 @@ Frontend Styling
 
 Write logic tp get holdings file from relevant website once a day (with backup if fail...)
 
-Write logic to only call API on days when market is open or write fallback for when API is called without market open
+Add logic to handle week days where market is closed. Most liley has to be error handling logic to prevent nothing goes wrong when market closed.
+
+Add logic to handle API calls where the symbol is not recognised (for example:  symbol: 'CASH_USD')
 
 Add handling on backend when storing data to handle proeprties not being there on data returned from API call (no price, no percent, cant find symbol...)
