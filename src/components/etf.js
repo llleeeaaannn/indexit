@@ -4,27 +4,18 @@ const Etf = () => {
 
   return (
     <div>
-        <div>
-            <div className={styles.details}>
 
-                <span>Ticker</span>
-                <span>Name</span>
+      <div>
+        <h3>Ticker</h3>
+        <h4>Name</h4>
+        <span>$Original Price</span>
+      </div>
 
-            </div>
+      <div>
+        <span>$UpdatedPrice</span>
+        <span>PercentChange%</span>
+      </div>
 
-            <div className={styles.price}>
-
-                <div>
-                    <span>Price</span>
-                    <span>New Price</span>
-                </div>
-                <div>
-                    <span>Percent Change</span>
-                    <span>Dollar Change</span>
-                </div>
-
-            </div>
-        </div>
     </div>
   )
 }
