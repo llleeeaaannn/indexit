@@ -3,7 +3,7 @@ import styles from '../styles/etf.module.css';
 const Etf = () => {
 
   return (
-    <div>
+    <div className={styles.etf}>
 
       <div>
         <h3>Ticker</h3>
