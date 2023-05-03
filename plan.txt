@@ -29,9 +29,15 @@ https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-m
 To Do:
 Frontend Styling
 
-Write logic tp get holdings file from relevant website once a day (with backup if fail...)
+Write logic to get holdings file from relevant website once a day (with backup if fail...) -> Backup should be keeping the current holdings file
 
 Add logic to handle week days where market is closed. Most liley has to be error handling logic to prevent nothing goes wrong when market closed.
+-> Above logic to keep current holdings file if none other is available.
+-> Logic for API calls potentially returning errors or values with large bid asks
+
+Add logic to call SPY price very often
+-> Either on page load from frontend
+-> Or backend calls it at set intervals
 
 Add logic to handle API calls where the symbol is not recognised (for example:  symbol: 'CASH_USD')
 
