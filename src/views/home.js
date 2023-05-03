@@ -1,5 +1,6 @@
 import styles from '../styles/home.module.css';
 import { useState, useEffect } from 'react';
+import Etf from '../components/etf';
 import Stock from '../components/stock';
 import Calculate from '../components/calculate';
 import Searchbar from '../components/searchbar';
@@ -68,6 +69,8 @@ const Home = () => {
     <div className={styles.home}>
 
       <Calculate stockStates={stockStates} />
+
+      <Etf />
 
       <Searchbar
         tickers={tickers}
