@@ -11,6 +11,8 @@ const Etf = () => {
         <span>$Original Price</span>
       </div>
 
+      <div>Chart of ETF or maybe makeup of ETF</div>
+
       <div className={styles.prices}>
         <span>UpdatedPrice</span>
         <span>PercentChange</span>
