@@ -1,8 +1,6 @@
 .etf {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     gap: 2rem;
     padding: 1.5rem 2rem;
     border-radius: 1rem;
