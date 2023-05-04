@@ -3,15 +3,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    color: var(--black3FC);
+    background-color: var(--grey1BG);
 }
 
 .overview {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .prices {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
