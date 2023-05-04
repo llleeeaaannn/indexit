@@ -5,3 +5,13 @@
     align-items: center;
     border: 1px solid red;
 }
+
+.overview {
+    display: flex;
+    flex-direction: column;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+}
