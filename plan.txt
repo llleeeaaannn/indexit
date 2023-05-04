@@ -3,6 +3,8 @@ Frontend Styling (spacing is weird on stock components)
 
 Style searchbar and message when there's no matches
 
+Add percent and dollar signs to input value change fields in stock component
+
 Write logic to get holdings file from relevant website once a day (with backup if fail...) -> Backup should be keeping the current holdings file
 
 Add logic to handle week days where market is closed. Most liley has to be error handling logic to prevent nothing goes wrong when market closed.
