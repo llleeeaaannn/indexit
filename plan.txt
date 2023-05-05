@@ -27,6 +27,8 @@ Users can adjust multiple stocks at once.
 Users can adjust entire sectors/industries by % (not price)
 Users can reset all changes with a button
 Users can reset single stock changes with a button
+Not all stocks will display to improve performance
+Users will have the ability to display more stocks
 
 UI:
 Each stock is own component
