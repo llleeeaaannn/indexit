@@ -39,13 +39,6 @@ Search bar which removes all stocks that dont match
 At top: component for index which shows actual price, adjusted price, difference (in $ and %)
 Navbar at top with list of all available indices
 
-Data Objects:
-Stocks (Name, Ticker, % of Index)
-
-API:
-Get price of Index
-Get price of each stock
-
 Calculation and Weighting Guidelines:
 https://www.spglobal.com/spdji/en/research-insights/index-literacy/methodology-matters/
 
