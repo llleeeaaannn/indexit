@@ -1,4 +1,5 @@
 import styles from '../styles/etf.module.css';
+import chartjs from chartjs;
 
 const Etf = () => {
 
