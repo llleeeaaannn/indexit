@@ -1,4 +1,6 @@
 To Do:
+Figure out how to calculate ETf price following changes in stock prices
+
 Frontend Styling (spacing is weird on stock components)
 
 Style searchbar and message when there's no matches
